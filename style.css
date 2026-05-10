@@ -1,0 +1,290 @@
+html {
+    zoom: 0.8;
+}
+
+body {
+    margin: 0;
+    background-color: #eee8df;
+    color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.55;
+}
+
+#top {
+    min-height: 345px;
+    padding: 70px 24px 48px 24px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #4f1010;
+    background-image: linear-gradient(rgba(24, 8, 8, 0.46), rgba(24, 8, 8, 0.72)), url("ctan.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#top h1 {
+    max-width: 760px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 50px;
+    line-height: 1.08;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#top p {
+    max-width: 660px;
+    margin: 18px auto 0 auto;
+    font-size: 17px;
+}
+
+#nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 10px 16px;
+    background-color: #8b2626;
+    text-align: center;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.18);
+}
+
+#nav p {
+    margin: 0;
+}
+
+a, a:link {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #f4d5b4;
+}
+
+a:hover {
+    color: #ffe59a;
+    text-decoration: underline;
+}
+
+a:focus {
+    color: #ffe59a;
+}
+
+.section {
+    width: 82%;
+    max-width: 880px;
+    margin: 32px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-top: 7px solid #bf5a3f;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    scroll-margin-top: 90px;
+}
+
+.intro {
+    margin-top: 24px;
+}
+
+.visual-section {
+    max-width: 1080px;
+}
+
+.note-section {
+    background-color: #263647;
+    color: #ffffff;
+    border-top-color: #d9a441;
+}
+
+.note-section h2 {
+    color: #ffffff;
+}
+
+.conclusion {
+    background-color: #fbf5ee;
+}
+
+h2 {
+    margin-top: 0;
+    color: #8b2626;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    line-height: 1.25;
+}
+
+h3 {
+    color: #263647;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 15px;
+}
+
+blockquote {
+    margin: 22px 0 6px 0;
+    padding: 14px 18px;
+    background-color: #f6eadc;
+    border-left: 6px solid #8b2626;
+    font-style: italic;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+.process-list {
+    margin: 18px 0 0 0;
+    padding-left: 24px;
+}
+
+.process-list li {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+table {
+    width: 100%;
+    margin: 18px 0 0 0;
+    border-collapse: collapse;
+}
+
+caption {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #263647;
+}
+
+th {
+    padding: 10px;
+    background-color: #263647;
+    color: #ffffff;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f6eadc;
+}
+
+.viz-box {
+    margin-top: 20px;
+    padding: 12px;
+    overflow-x: auto;
+    background-color: #f8f8f8;
+    border: 1px solid #d4d4d4;
+}
+
+.compact-viz {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wide-viz {
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.scaled-tableau-viz {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.tableau-scale {
+    transform-origin: top left;
+}
+
+.tableau-scale iframe {
+    max-width: none;
+}
+
+#footer {
+    padding: 22px;
+    background-color: #1b1c20;
+    color: #ffffff;
+    text-align: center;
+}
+
+#footer p {
+    margin: 0;
+}
+
+.template-credit {
+    display: inline-block;
+    margin-top: 18px !important;
+    padding-top: 10px;
+    border-top: 1px solid #5f6975;
+    color: #d9e0e7;
+    font-size: 13px;
+    letter-spacing: 4px;
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+
+.template-credit a, .template-credit a:link {
+    color: #8eb5d8;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.template-credit a:visited {
+    color: #b5cde4;
+}
+
+.template-credit a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 760px) {
+    #top {
+        min-height: 0;
+        padding: 56px 16px 54px 16px;
+    }
+
+    #top h1 {
+        font-size: 32px;
+    }
+
+    #top p {
+        font-size: 15px;
+    }
+
+    #nav {
+        position: static;
+    }
+
+    #nav a {
+        display: inline-block;
+        margin: 4px 8px;
+    }
+
+    .section {
+        width: auto;
+        margin: 20px 12px;
+        padding: 20px;
+    }
+
+    .intro {
+        margin-top: 18px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .template-credit {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+}
